@@ -143,6 +143,49 @@ nav li a:hover {
   border: 2px solid black;
 }
 
+.last .action {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: white;
+}
+.last .action .links {
+  padding: 1em;
+  border: 1px solid black;
+}
+.last .action .links h2 {
+  color: var(--primary-color);
+}
+.last .action .links ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.last .action .links ul li {
+  padding-top: 1em;
+}
+.last .action .links ul a {
+  text-decoration: none;
+  color: black;
+}
+.last .action .download {
+  padding: 1em;
+  border: 1px solid black;
+  display: block;
+  padding-bottom: 1em;
+}
+.last .action .download h2 {
+  color: var(--primary-color);
+}
+.last .action .download a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 1em;
+}
+.last .action .gallary {
+  padding: 1em;
+  border: 1px solid black;
+}
+
 @media only screen and (min-width: 916px) {
   .mobile-menu,
   .mobile-menu-exit {
