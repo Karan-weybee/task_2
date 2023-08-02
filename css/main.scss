@@ -88,6 +88,7 @@ body {
     // display: block;
     // overflow: auto;
     // white-space: nowrap;
+    
     background: #F2F2F2;
     margin-top: -1em;
     width: 100%;
@@ -122,7 +123,7 @@ body {
 
 .navbar {
     background: white;
-
+     
     padding: 1em;
 
     a {
@@ -218,7 +219,7 @@ nav {
             .videos,
             .maps,
             .photos {
-                border: 2px solid black;
+                border: 2px solid rgb(255, 255, 255);
                 padding: 1em;
                 margin: 1em;
                 // display: flex;
@@ -249,16 +250,18 @@ nav {
             margin-left: 1em;
             margin-right: 1em;
             margin-top: 1em;
-            border: 2px solid black;
+            // border: 2px solid black;
 
             .scedule {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            
 
                 .timing,
                 .testonomial,
                 .contact,
                 .event {
+                    padding-left: 10%;
                     border: 2px solid black;
                 }
             }
@@ -350,7 +353,7 @@ nav {
                 .videos,
                 .maps,
                 .photos {
-                    border: 2px solid black;
+                    border: 2px solid rgb(255, 255, 255);
                     display: grid;
                     // justify-content: center;
                     grid-template-columns: 1fr;
@@ -382,7 +385,7 @@ nav {
             .right-col {
                 // margin-left: 1em;
                 margin-top: 1em;
-                border: 2px solid rgb(34, 163, 34);
+                // border: 2px solid rgb(34, 163, 34);
                 display: block;
                 .scedule {
                     display:grid;
@@ -427,7 +430,7 @@ nav {
                 .videos,
                 .maps,
                 .photos {
-                    border: 2px solid black;
+                    border: 2px solid rgb(255, 255, 255);
                     // display: flex;
                     // justify-content: center;
                     display: grid;
@@ -464,16 +467,17 @@ nav {
             .right-col {
                 margin-right: 1em;
                 margin-top: 1em;
-                border: 2px solid rgb(233, 13, 13);
+                // border: 2px solid rgb(233, 13, 13);
 
                 .scedule {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    border: 2px solid black;
+                    // border: 2px solid black;
                     .timing,
                     .testonomial,
                     .contact,
                     .event {
+
                         border: 2px solid black;
                         padding: .3em;
                         
@@ -566,9 +570,10 @@ nav {
                 .videos,
                 .maps,
                 .photos {
-                    border: 2px solid black;
+                    border: 2px solid rgb(255, 255, 255);
                     height: auto;
                     justify-content: center;
+
                     // width: 18.8em;
                     // height: 9.4em; 
 
@@ -601,7 +606,7 @@ nav {
             }
 
             .right-col {
-                margin-left: -1em;
+                margin-left: 1em;
                 margin-top: 2em;
                 margin-bottom: 1em;
                 // border: 2px solid black;
@@ -614,6 +619,7 @@ nav {
                     .testonomial,
                     .contact,
                     .event {
+                       
                         padding: 1em;
                         border: 2px solid black;
                     }
@@ -710,13 +716,18 @@ nav {
             h3 {
                 color: var(--primary-color);
             }
-
-            span {
-                font-weight: bold;
-                margin: 0 0 .2em .5em;
-                color: var(--primary-color);
-                height: 30em;
+            p {
+                margin-bottom: 4em;
             }
+            a {
+                // font-weight: bold;
+                margin: 0 0 .2em .5em;
+                
+                color: var(--primary-color);
+                
+            }
+
+            
 
         }
 

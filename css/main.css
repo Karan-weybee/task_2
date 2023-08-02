@@ -187,7 +187,7 @@ nav li a:hover {
 .feature .container .left-col .videos,
 .feature .container .left-col .maps,
 .feature .container .left-col .photos {
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
   padding: 1em;
   margin: 1em;
 }
@@ -212,7 +212,6 @@ nav li a:hover {
   margin-left: 1em;
   margin-right: 1em;
   margin-top: 1em;
-  border: 2px solid black;
 }
 .feature .container .right-col .scedule {
   display: grid;
@@ -222,6 +221,7 @@ nav li a:hover {
 .feature .container .right-col .scedule .testonomial,
 .feature .container .right-col .scedule .contact,
 .feature .container .right-col .scedule .event {
+  padding-left: 10%;
   border: 2px solid black;
 }
 
@@ -292,7 +292,7 @@ nav li a:hover {
   .feature .container .left-col .videos,
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -316,7 +316,6 @@ nav li a:hover {
   }
   .feature .container .right-col {
     margin-top: 1em;
-    border: 2px solid rgb(34, 163, 34);
     display: block;
   }
   .feature .container .right-col .scedule {
@@ -351,7 +350,7 @@ nav li a:hover {
   .feature .container .left-col .videos,
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -379,12 +378,10 @@ nav li a:hover {
   .feature .container .right-col {
     margin-right: 1em;
     margin-top: 1em;
-    border: 2px solid rgb(233, 13, 13);
   }
   .feature .container .right-col .scedule {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 2px solid black;
   }
   .feature .container .right-col .scedule .timing,
   .feature .container .right-col .scedule .testonomial,
@@ -453,7 +450,7 @@ nav li a:hover {
   .feature .container .left-col .videos,
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     height: auto;
     justify-content: center;
   }
@@ -479,7 +476,7 @@ nav li a:hover {
     width: 19em;
   }
   .feature .container .right-col {
-    margin-left: -1em;
+    margin-left: 1em;
     margin-top: 2em;
     margin-bottom: 1em;
   }
@@ -558,11 +555,12 @@ nav li a:hover {
 .hero .container .contant h3 {
   color: var(--primary-color);
 }
-.hero .container .contant span {
-  font-weight: bold;
+.hero .container .contant p {
+  margin-bottom: 4em;
+}
+.hero .container .contant a {
   margin: 0 0 0.2em 0.5em;
   color: var(--primary-color);
-  height: 30em;
 }
 .hero .container .img {
   display: flex;
