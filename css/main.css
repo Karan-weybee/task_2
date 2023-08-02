@@ -8,10 +8,91 @@ body {
   margin-right: 2.5em;
 }
 
-.container1 {
+.footer {
+  margin-left: -2.5em;
+  padding-bottom: 3em;
+  padding-left: 2.5em;
+  padding-top: 1em;
+  margin-right: -2.5em;
+  background: white;
+  height: 3em;
+  display: flex;
+}
+.footer .copy {
+  margin-top: 0.5em;
+}
+.footer .btn {
+  padding: 0.5em 1em 0.5em 1em;
+  margin-left: 1.5em;
+  margin-top: 0.5em;
+}
+
+#facebook {
+  margin-top: -3.5%;
   display: block;
+  background: #9a9898;
+  padding: 1em;
+}
+
+#gallary {
+  color: var(--primary-color);
+}
+
+.feature-contant {
+  color: black;
+}
+
+.main {
+  color: var(--primary-color);
+  margin-left: 1em;
+}
+
+.main_nur {
+  margin-right: 1em;
+}
+
+.img-contant {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+#capcha {
+  width: 40%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#button {
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5em;
+  float: right;
+}
+
+#cam-1-text {
+  color: var(--primary-color);
+  font-size: large;
+}
+
+#mail-icon {
+  margin-top: -1em;
+  color: var(--primary-color);
+}
+
+#time {
+  color: var(--primary-color);
+}
+
+.time {
+  margin-left: 1em;
+}
+
+.container1 {
   background: #F2F2F2;
-  margin: 0;
+  margin-top: -1em;
   width: 100%;
   height: 4em;
 }
@@ -32,7 +113,7 @@ body {
   display: flex;
   justify-content: left;
   width: 100%;
-  margin-left: -2em;
+  margin-left: -1.5em;
 }
 
 .navbar {
@@ -129,6 +210,7 @@ nav li a:hover {
 }
 .feature .container .right-col {
   margin-left: 1em;
+  margin-right: 1em;
   margin-top: 1em;
   border: 2px solid black;
 }
@@ -186,6 +268,132 @@ nav li a:hover {
   border: 1px solid black;
 }
 
+@media (max-width: 473px) {
+  .container1 {
+    overflow: auto;
+    white-space: nowrap;
+    background: #F2F2F2;
+    margin-top: -2em 0 0 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    height: 4em;
+  }
+  .feature .container {
+    background: white;
+    display: block;
+  }
+  .feature .container .left-col {
+    margin-top: 1em;
+    background: #F2F2F2;
+    display: block;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+  .feature .container .left-col .videos,
+  .feature .container .left-col .maps,
+  .feature .container .left-col .photos {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .feature .container .left-col .videos .youtube,
+  .feature .container .left-col .maps .youtube,
+  .feature .container .left-col .photos .youtube {
+    height: 90%;
+    width: 95%;
+  }
+  .feature .container .left-col .videos .frame,
+  .feature .container .left-col .maps .frame,
+  .feature .container .left-col .photos .frame {
+    height: 90%;
+    width: 95%;
+  }
+  .feature .container .left-col .videos .pho,
+  .feature .container .left-col .maps .pho,
+  .feature .container .left-col .photos .pho {
+    height: 90%;
+    width: 95%;
+  }
+  .feature .container .right-col {
+    margin-top: 1em;
+    border: 2px solid rgb(34, 163, 34);
+    display: block;
+  }
+  .feature .container .right-col .scedule {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 0.5em;
+  }
+  .feature .container .right-col .scedule .timing,
+  .feature .container .right-col .scedule .testonomial,
+  .feature .container .right-col .scedule .contact,
+  .feature .container .right-col .scedule .event {
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 1em;
+    padding: 1em;
+    border: 2px solid rgb(10, 10, 10);
+  }
+}
+@media only screen and (max-width: 816px) and (min-width: 474px) {
+  .feature .container {
+    background: white;
+    display: block;
+  }
+  .feature .container .left-col {
+    margin-top: 1em;
+    background: #F2F2F2;
+    display: block;
+    align-items: center;
+    padding-top: 0.5em;
+  }
+  .feature .container .left-col .videos,
+  .feature .container .left-col .maps,
+  .feature .container .left-col .photos {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .feature .container .left-col .videos .youtube,
+  .feature .container .left-col .maps .youtube,
+  .feature .container .left-col .photos .youtube {
+    margin-left: 0.7em;
+    height: 95%;
+    width: 90%;
+  }
+  .feature .container .left-col .videos .frame,
+  .feature .container .left-col .maps .frame,
+  .feature .container .left-col .photos .frame {
+    margin-left: 0.7em;
+    height: 95%;
+    width: 90%;
+  }
+  .feature .container .left-col .videos .pho,
+  .feature .container .left-col .maps .pho,
+  .feature .container .left-col .photos .pho {
+    margin-left: 0.7em;
+    height: 95%;
+    width: 90%;
+  }
+  .feature .container .right-col {
+    margin-right: 1em;
+    margin-top: 1em;
+    border: 2px solid rgb(233, 13, 13);
+  }
+  .feature .container .right-col .scedule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+  }
+  .feature .container .right-col .scedule .timing,
+  .feature .container .right-col .scedule .testonomial,
+  .feature .container .right-col .scedule .contact,
+  .feature .container .right-col .scedule .event {
+    border: 2px solid black;
+    padding: 0.3em;
+  }
+}
 @media only screen and (min-width: 916px) {
   .mobile-menu,
   .mobile-menu-exit {
@@ -234,10 +442,10 @@ nav li a:hover {
     background: white;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    width: 100%;
   }
   .feature .container .left-col {
     margin-top: 1em;
-    margin-left: 1em;
     background: #F2F2F2;
     display: block;
     align-items: center;
@@ -246,30 +454,34 @@ nav li a:hover {
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
     border: 2px solid black;
+    height: auto;
     justify-content: center;
   }
   .feature .container .left-col .videos .youtube,
   .feature .container .left-col .maps .youtube,
   .feature .container .left-col .photos .youtube {
+    margin-left: 1.6em;
     height: 18em;
-    width: 18em;
+    width: 19em;
   }
   .feature .container .left-col .videos .frame,
   .feature .container .left-col .maps .frame,
   .feature .container .left-col .photos .frame {
+    margin-left: 1.6em;
     height: 18em;
-    width: 18em;
+    width: 19em;
   }
   .feature .container .left-col .videos .pho,
   .feature .container .left-col .maps .pho,
   .feature .container .left-col .photos .pho {
-    height: 18.5em;
-    width: 18em;
+    margin-left: 1.6em;
+    height: auto;
+    width: 19em;
   }
   .feature .container .right-col {
-    margin-left: 1em;
-    margin-top: 1em;
-    border: 2px solid black;
+    margin-left: -1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
   .feature .container .right-col .scedule {
     display: grid;
@@ -279,6 +491,7 @@ nav li a:hover {
   .feature .container .right-col .scedule .testonomial,
   .feature .container .right-col .scedule .contact,
   .feature .container .right-col .scedule .event {
+    padding: 1em;
     border: 2px solid black;
   }
   .last .action {
@@ -357,4 +570,82 @@ nav li a:hover {
   align-items: center;
   margin-bottom: 2em;
   background-color: rgba(255, 252, 253, 0.974);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }/*# sourceMappingURL=main.css.map */
