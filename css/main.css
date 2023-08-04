@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(238, 49, 80);
+  --primary-color: rgb(247, 107, 231);
 }
 
 .all {
@@ -352,7 +352,13 @@ nav li a:hover {
   .feature .container .left-col .maps .pho .face-photo,
   .feature .container .left-col .photos .pho .face-photo {
     width: 80%;
-    height: 120%;
+    width: 100%;
+  }
+  .feature .container .left-col .videos .pho .face-photo .face-single,
+  .feature .container .left-col .maps .pho .face-photo .face-single,
+  .feature .container .left-col .photos .pho .face-photo .face-single {
+    width: 30%;
+    margin: 1%;
   }
   .feature .container .right-col {
     margin-top: 1em;
@@ -446,6 +452,17 @@ nav li a:hover {
     margin-left: 0.7em;
     height: 95%;
     width: 90%;
+  }
+  .feature .container .left-col .videos .face-photo,
+  .feature .container .left-col .maps .face-photo,
+  .feature .container .left-col .photos .face-photo {
+    width: 100%;
+  }
+  .feature .container .left-col .videos .face-photo .face-single,
+  .feature .container .left-col .maps .face-photo .face-single,
+  .feature .container .left-col .photos .face-photo .face-single {
+    width: 30%;
+    margin: 1%;
   }
   .feature .container .left-col .videos .pho,
   .feature .container .left-col .maps .pho,
