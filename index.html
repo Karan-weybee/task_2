@@ -12,283 +12,508 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <!-- <script src="../task_2/css/magicscroll/magicscroll.js"></script> -->
+
 </head>
 
-<body>
+<body onresize="myFunction()">
 
+    <div class="all">
+        <div class="all-contant">
+            <div class="container1">
 
-    <div class="container1">
-
-        <!-- <a class="logo" href="#"><span>ELIM</span></a> -->
-        <ul class="first-nav">
-            <li class="current"><a href="#" class="elim">ELIM</a> </li>
-            <li><a href="#">CHURCH</a></li>
-            <li><a href="#">DAY</a></li>
-            <li><a href="#">NUR.</a> </li>
-        </ul>
-
-    </div>
-
-    <div class="navbar">
-
-        <div class="container">
-            <a href="#" class="first-a">Home</a>
-            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Nevigation">
-
-            <nav>
-                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Nevigation">
-                <ul class="primary-nav">
-                    <!-- <li class="current second-a"><a href="#">Home</a> </li> -->
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Fees</a></li>
-                    <li><a href="#">openning</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">ofstep</a></li>
-                    <li><a href="#">staff</a></li>
-                    <li><a href="#">contact</a> </li>
+                <!-- <a class="logo" href="#"><span>ELIM</span></a> -->
+                <ul class="first-nav">
+                    <li class="current"><a href="#" class="elim">ELIM</a> </li>
+                    <li><a href="#">CHURCH</a></li>
+                    <li><a href="#">DAY</a></li>
+                    <li><a href="#">NURSARY</a> </li>
                 </ul>
-                <ul class="secondary-nav">
-                    <li class="current"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-                            </svg></a></li>
-                    <li class="current"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
-                            </svg></a></li>
-                    <li class="go-premium-cta"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                <path
-                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                            </svg></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <br>
-    <!-- hero section  -->
-    <section class="hero">
-        <div class="container">
-            <div class="contant">
-                <h3>Flexibla childcare to suit your Lifestyle</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus aut nam eum voluptatibus unde
-                    accusamus maxime! Fugit commodi excepturi ipsum quia atque, itaque saepe sunt eum nemo. Est, sed.
-                </p>
-              
-                <a href="">&#x25CB;</a>
-                <a href="">&#9679</a>
-                <a href="">&#9679</a>
-                <!-- <span>.</span><span>.</span><span>.</span> -->
+
             </div>
-            <div class="img">
-                <img src="./images/girl1.jpg" width="80%" height="200px" alt="">
-            </div>
-        </div>
-    </section>
-    <br>
 
-    <!-- feature section-->
-    <section class="feature">
-        <div class="container">
-            <div class="left-col">
-                <div class="videos">
+            <div class="navbar">
 
-                    <p><i class="fa fa-camera" style="font-size:24px"></i>&nbsp;<span id="cam-1-text">Nursery</span>
-                        <span>Video</span>
-                    </p>
-                    <p><video controls class="youtube">
-                            <source src="/media/cc0-videos/flower.webm" type="video/webm">
-                        </video>
-                    </p>
-                </div><br>
-                <div class="maps">
-                    <p><i class="fa fa-map-marker" style="font-size:24px"></i>&nbsp;<span
-                            id="cam-1-text">Location</span> <span>Maps</span></p>
+                <div class="container">
+                    <a href="#" class="first-a">HOME</a>
+                    <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Nevigation">
 
-                    <iframe class="frame"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29529.58356914316!2d70.77630535000002!3d22.30835235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1690881533765!5m2!1sen!2sin"
-                        style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div><br>
-                <div class="photos">
-                    <span class="pho">
-                        <p><b id="facebook">Embeded Facebook</b></p>
-                        <img src="../task_2/images/girl1.jpg" alt="" width="90%" ;>
-                    </span>
+                    <nav>
+                        <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Nevigation">
+                        <ul class="primary-nav">
+                            <!-- <li class="current second-a"><a href="#">Home</a> </li> -->
+                            <li><a href="#">FEATURE</a></li>
+                            <li><a href="#">FEES</a></li>
+                            <li><a href="#">OPENING</a></li>
+                            <li><a href="#">TESTIMONIAL</a></li>
+                            <li><a href="#">OFSTEP</a></li>
+                            <li><a href="#">STAFF</a></li>
+                            <li><a href="#">CONTACT</a> </li>
+                        </ul>
+                        <ul class="secondary-nav">
+                            <li  class="current"><a href="#"><svg style="background: white;" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg></a></li>
+                            <li class="current"><a href="#"><svg style="background: white;"  xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg></a></li>
+                            <li class="go-premium-cta"><a href="#"><svg style="background: white;" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                        viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <path
+                                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                    </svg></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <!-- <br> -->
-            <div class="right-col">
-                <div class="contant" style="margin: 1em;">
-                    <h2><span> WELCOME TO </span> Elim Church Day Nursery</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptate provident harum
-                        incidunt unde perferendis. Atque dicta iusto similique aliquid nobis. Eius placeat odit facilis
-                        ex quibusdam a animi laboriosam!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo nam distinctio laborum
-                        veniam quidem optio nostrum molestiae error aliquam tempora incidunt, quam, eius voluptatum
-                        porro doloribus sapiente officia vero! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sint nihil necessitatibus repudiandae hic, rem quod iure at iusto fugit, praesentium odio itaque
-                        culpa porro debitis inventore numquam amet illum cupiditate!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo nam distinctio laborum
-                        veniam quidem optio nostrum molestiae error aliquam tempora incidunt, quam, eius voluptatum
-                        porro doloribus sapiente officia vero! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Sint nihil necessitatibus repudiandae hic, rem quod iure at iusto fugit, praesentium odio itaque
-                        culpa porro debitis inventore numquam amet illum cupiditate!</p>
-                </div>
-                <div class="scedule">
-                    <div class="timing" width="100%">
-                        <i class="fa-solid fa-clock"></i> &nbsp; &nbsp;<span id="cam-1-text">Opening</span>
-                        <span>Times</span><br><br>
+            <br>
+            <!-- hero section  -->
+            <section class="hero">
+                <div class="container">
+                    <div class="contant">
+                        <h3>Flexibla childcare to suit your Lifestyle</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus aut nam eum
+                            voluptatibus unde
+                            accusamus maxime! Fugit commodi excepturi ipsum quia atque, itaque saepe sunt eum nemo. Est,
+                            sed.
+                        </p>
 
-                        <h4 class="time">Monday .................. <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Tuesday .................. <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Wednesday ............. <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Thursday ................ <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Friday ..................... <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Saturday ................. <span id="time">0245-1230</span></h4>
-                        <h4 class="time">Sunday .................... <span id="time">0245-1230</span></h4>
-
+                        <a href="">&#x25CB;</a>
+                        <a href="">&#9679;</a>
+                        <a href="">&#9679;</a>
+                        <!-- <span>.</span><span>.</span><span>.</span> -->
                     </div>
-                    <div class="contact">
-                        <i style="font-size:24px" class="material-icons" id="mail">&#xe0be;</i> &nbsp; <span
-                            id="mail-icon">Quick</span> <span>Contact</span><br><br>
+                    <div class="img">
+                        <img src="./images/girl1.jpg" width="80%" height="200px" alt="">
+                    </div>
+                </div>
+            </section>
+            <br>
 
-                        <form action="">
+            <!-- feature section-->
+            <section class="feature">
+                <div class="container">
+                    <div class="left-col">
+                        <div class="videos">
+
+                            <p><i class="fa fa-camera" style="font-size:24px"></i>&nbsp;&nbsp;<span
+                                    id="cam-1-text">Nursery</span> &nbsp;
+                                <span style="font-size: 1.9em;">Video</span>
+                            </p>
+                            <video controls class="youtube">
+                                <source src="/media/cc0-videos/flower.webm" type="video/webm">
+                            </video>
+
+                        </div><br>
+                        <div class="maps">
+                            <p><i class="fa fa-map-marker" style="font-size:24px"></i>&nbsp;&nbsp;<span
+                                    id="cam-1-text">Location</span>&nbsp; <span style="font-size: 1.9em;">Maps</span></p>
+
+                            <iframe class="frame"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29529.58356914316!2d70.77630535000002!3d22.30835235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1690881533765!5m2!1sen!2sin"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div><br>
+                        <div class="photos">
+                            <h3 class="photos-facebook">facebook</h3>
+                            <div class="pho">
+                                <img src="images/3.jpg" width="85%" height="95%" alt="">
+                                <span id="facebook">Elin Embeded Facebook <br> <br>
+                                    <div><img src="images/facebook-lite.jpg" width="30%" alt=""></div>
+                                </span>
 
 
-                            <input type="text" name="name" id="" placeholder="Name"><br><br>
-                            <input type="email" name="email" id="" placeholder="Email"><br><br>
-                            <input type="text" name="phone" id="" placeholder="Mobile no."><br><br>
-                            <textarea name="comment" placeholder="Comment" id="" cols="20" rows="10"></textarea><br><br>
-                            <div class="list">
-                                <img src="./images/menu.svg" alt="" width="20px" height="20px">&nbsp; &nbsp;
-                                <input type="text" name="phone" id="capcha" placeholder="capcha"> &nbsp;
-                                <input type="submit" name="" id="button"><br><br>
                             </div>
-                        </form>
-                    </div>
-                    <div class="testonomial">
-                        <i style='font-size:24px;' class='fas'>&#xf0da;</i>&nbsp; <span
-                            id="mail-icon">Testimonial</span> <span></span><br><br>
-
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus,
-                            repellendus earum eum cupiditate quidem sed recusandae provident, tenetur eos excepturi a
-                            assumenda esse alias dolorem? Id quae adipisci exercitationem.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, unde officia expedita iusto
-                            soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit nesciunt
-                            ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, unde officia expedita iusto
-                            soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit nesciunt
-                            ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
-                        <input type="submit" name="" value="Testimonial" id="button"><br><br>
-                    </div>
-                    <div class="event">
-                        <i style='font-size:24px' class='fas'>&#xf0da;</i>&nbsp; <span id="mail-icon">Main
-                            Nursary</span> <span> Event</span><br><br>
-                        <div class="img-contant">
-                            <img src="images/1.jpg" alt="photo" width="50em" height="50em" style="margin-left: 1em;">
-                            <span class="main"> Chrismas Nativity <span>Event</span>
-                                <p class="feature-contant">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Enim, unde officia expedita iusto
-                                    soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit
-                                    nesciunt
-                                    ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
-                            </span>
-                            <div>&nbsp;</div>
-                            <div>&nbsp;</div>
-                            <img src="images/2.jpg" alt="photo" width="50em" height="50em" style="margin-left: 1em;">
-                            <span class="main">Chrismas Craft and stories
-                                <p class="feature-contant">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                    Enim, unde officia expedita iusto
-                                    soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit
-                                    nesciunt
-                                    ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
-                            </span></span>
+                            <!-- <img src="../task_2/images/girl1.jpg" alt="" width="90%" ;> -->
+                            <div class="face-photo" style="margin-top: .5em;">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                                <img src="images/1.jpg" alt="" width="23%" height="20%">
+                            </div><br>
+                                  <hr>
+                                  <div class="photos-login">
+                                    Facebook login page
+                                  </div>
                         </div>
-                        <input type="submit" name="Main Nur.." id="button" value="Main nur.." class="main_nur"><br><br>
+                    </div>
+                    <!-- <br> -->
+                    <div class="right-col">
+                        <div class="contant" style="margin: 1em;">
+                            <h2><span id="welcome"> WELCOME TO </span> <span style="font-size: 1.6em;"> Elim Church Day Nursery </span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptate provident
+                                harum
+                                incidunt unde perferendis. Atque dicta iusto similique aliquid nobis. Eius placeat odit
+                                facilis
+                                ex quibusdam a animi laboriosam!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo nam distinctio
+                                laborum
+                                veniam quidem optio nostrum molestiae error aliquam tempora incidunt, quam, eius
+                                voluptatum
+                                porro doloribus sapiente officia vero! Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Sint nihil necessitatibus repudiandae hic, rem quod iure at iusto fugit, praesentium
+                                odio itaque
+                                culpa porro debitis inventore numquam amet illum cupiditate!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem explicabo nam distinctio
+                                laborum
+                                veniam quidem optio nostrum molestiae error aliquam tempora incidunt, quam, eius
+                                voluptatum
+                                porro doloribus sapiente officia vero! Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Sint nihil necessitatibus repudiandae hic, rem quod iure at iusto fugit, praesentium
+                                odio itaque
+                                culpa porro debitis inventore numquam amet illum cupiditate!</p>
+                        </div>
+                        <div class="scedule">
+                            <div class="timing" width="100%">
+                                <img src="images/history.png" width="7%" height="7%" alt="">&nbsp; &nbsp;<span
+                                    id="cam-1-text">Opening</span>
+                                <span style="font-size: 2.1em;">Times</span>
+                                <span  id="repeat">
+                                <!-- <h4 class="time">Monday &nbsp;<span id="dotted">&#183;</span>&nbsp;<span id="time">0245-1230</span></h4> -->
+                                <h4 id="time1">Monday <span id="dotted1"> &#183;</span> <span id="time">0245-1230</span></h4>
+                                <h4 id="time2">Tuesday <span id="dotted2"> &#183;</span> <span id="time">0245-1230</span></h4>
+                                <h4 id="time3">Wednesday <span id="dotted3"> &#183;</span> <span id="time">0245-1230</span></h4>
+                                <h4 id="time4">Thursday <span id="dotted4"> &#183;</span> <span id="time">0245-1230</span></h4>
+                                <h4 id="time5">Friday <span id="dotted5"> &#183;</span> <span id="time">0245-1230</span></h4>
+                                <h4 id="time6">Saturday <span id="dotted6"> &#183;</span><span id="time">&nbsp;0245-1230</span></h4>
+                                <h4 id="time7">Sunday <span id="dotted7"> &#183;</span> <span id="time">0245-1230</span></h4>
+                            </span>
+                            </div>
+                            <div class="contact">
+                                <img src="images/email.png" width="7%" height="7%" alt=""> &nbsp;&nbsp; <span
+                                    id="mail-icon">Quick</span>&nbsp;&nbsp;<span style="font-size:1.9em;">Contact</span><br><br>
+
+                                <form action="">
+
+
+                                    <input type="text" name="name" id="" placeholder="Name" style="width: 95%;"><br><br>
+                                    <input type="email" name="email" id="" placeholder="Email"
+                                        style="width: 95%;"><br><br>
+                                    <input type="text" name="phone" id="" placeholder="Mobile no."
+                                        style="width: 95%;"><br><br>
+                                    <textarea name="comment" placeholder="Comment" id="" cols="20" rows="10"
+                                        style="width: 95%;"></textarea><br><br>
+                                    <div class="list">
+                                        <img src="./images/menu.svg" alt="" width="32%" height="20px" style="margin-top: 1%;">&nbsp; &nbsp;
+                                        <input type="text" name="phone" id="capcha" placeholder="capcha"
+                                            style="width: 28%; margin-top: 1%;"> &nbsp;
+                                        <input type="submit" name="" id="button"
+                                            style="width: 30%; float: right;margin-left: 2%; margin-top: 1%; border: 1px;"><br><br>
+                                    </div>
+                                </form>
+                                <br>
+                            </div>
+                            <div class="testonomial">
+                                <img src="images/communication.png" width="7%" height="7%" alt="">&nbsp;&nbsp; <span
+                                    id="mail-icon">Testimonial</span> <span></span><br><br>
+
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium necessitatibus,
+                                    repellendus earum eum cupiditate quidem sed recusandae provident, tenetur eos
+                                    excepturi a
+                                    assumenda esse alias dolorem? Id quae adipisci exercitationem.</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, unde officia expedita
+                                    iusto
+                                    soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit
+                                    nesciunt
+                                    ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, unde officia expedita
+                                    iusto
+                                    soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur? Velit
+                                    nesciunt
+                                    ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
+                                <input type="submit" name="" value="Testimonial" id="button" style="margin-right: .1em; margin-bottom: .1em; border: 1px;">
+                            </div>
+                            <div class="event">
+                                <img src="images/calendar.png" width="7%" height="7%" alt="">&nbsp;&nbsp; <span
+                                    id="mail-icon">Main
+                                    Nursary</span>&nbsp;<span style="font-size: 1.9em;"> Event</span><br><br>
+                                <div class="img-contant">
+                                    <img src="images/1.jpg" alt="photo" width="80%" height="50%"
+                                        >
+                                    <span class="main"> Chrismas Nativity <span>Event</span>
+                                        <p class="feature-contant">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Enim, unde officia expedita iusto
+                                            soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur?
+                                            Velit
+                                            nesciunt
+                                            ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
+                                    </span>
+                                    <div>&nbsp;</div>
+                                    <div>&nbsp;</div>
+                                    <img src="images/2.jpg" alt="photo" width="80%" height="50%"
+                                        >
+                                    <span class="main">Chrismas Craft and stories
+                                        <p class="feature-contant">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Enim, unde officia expedita iusto
+                                            soluta distinctio maxime doloremque ipsum. Magnam sit culpa consequatur?
+                                            Velit
+                                            nesciunt
+                                            ratione asperiores! Incidunt, beatae sapiente! Accusamus!</p>
+                                    </span></span>
+                                </div>
+                                <input type="submit" name="Main Nur.." id="button" value="Main nur.."
+                                    class="main_nur">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-    </section><br>
+            </section><br>
 
-    <!-- last grid section  -->
-    <section class="last">
-        <div class="action">
-            <div class="links">
-                <h2>List</h2>
-                <ul class="list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Testonomial</a> </li>
-                    <li><a href="#">Events</a> </li>
-                    <li><a href="#">Child</a> </li>
-                    <li><a href="#">Peers</a> </li>
-                    <li><a href="#">Room</a> </li>
-                    <li><a href="#">Opening time</a></li>
-                    <li><a href="#">Contact</a> </li>
-                </ul>
-            </div>
-            <div class="download">
-                <h2>Download Prospectus</h2><br><br>
-                <a href=""><img src="" alt="Download"></a> <br><br>
-            </div>
-            <div class="gallary">
-                <h2 id="gallary"> Photo gallary </h2> <br>
+            <!-- last grid section  -->
+            <section class="last">
+                <div class="action">
+                    <div class="links">
+                        <h2>List</h2>
+                        <ul class="list">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Testonomial</a> </li>
+                            <li><a href="#">Events</a> </li>
+                            <li><a href="#">Child</a> </li>
+                            <li><a href="#">Peers</a> </li>
+                            <li><a href="#">Room</a> </li>
+                            <li><a href="#">Opening time</a></li>
+                            <li><a href="#">Contact</a> </li>
+                        </ul>
+                    </div>
+                    <div class="download">
+                        <h2>Download Prospectus</h2><br><br>
+                        <a href="#" style="color:black; background: #f2f2f2; border: 2px solid #f2f2f2;">DOWNLOAD &nbsp;&nbsp;></a> <br><br>
+                    </div>
+                    <div class="gallary">
+                        <h2 id="gallary"> Photo gallary </h2> <br>
 
-                <div class="slideshow-container">
+                        <div class="slideshow-container">
 
-                    <div class="mySlides fade">
+                            <div class="mySlides fade">
 
-                        <img src="images/1.jpg" style="width:32%">
-                        <img src="images/2.jpg" style="width:32%">
-                        <img src="images/3.jpg" style="width:32%">
+                                <img src="images/1.jpg" style="width:30%">
+                                <img src="images/2.jpg" style="width:30%">
+                                <img src="images/3.jpg" style="width:30%">
+
+                            </div>
+
+                            <div class="mySlides fade">
+
+                                <img src="images/2.jpg" style="width:30%">
+                                <img src="images/3.jpg" style="width:30%">
+                                <img src="images/1.jpg" style="width:30%">
+                            </div>
+
+                            <div class="mySlides fade">
+
+                                <img src="images/3.jpg" style="width:30%">
+                                <img src="images/1.jpg" style="width:30%">
+                                <img src="images/2.jpg" style="width:30%">
+                            </div>
+
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        </div>
+                        <br>
+
 
                     </div>
-
-                    <div class="mySlides fade">
-
-                        <img src="images/2.jpg" style="width:32%">
-                        <img src="images/3.jpg" style="width:32%">
-                        <img src="images/1.jpg" style="width:32%">
-                    </div>
-
-                    <div class="mySlides fade">
-
-                        <img src="images/3.jpg" style="width:32%">
-                        <img src="images/1.jpg" style="width:32%">
-                        <img src="images/2.jpg" style="width:32%">
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-
                 </div>
-                <br>
+            </section>
 
-
-            </div>
         </div>
-    </section>
+        <!-- footer  -->
+        <br><br>
+        <div class="footer">
+            <div class="copy">&copy; &nbsp; All Copy Right </div>
+            <div class="buttons">
+                <input type="button" class="btn" value="Elim">
+                <input type="button" class="btn" value="Option">
+                <input type="button" class="btn" value="Exit">
 
-    <!-- footer  -->
-    <br><br>
-    <div class="footer">
-        <div class="copy">&copy; &nbsp; All Copy Right </div>
-        <div class="buttons">
-            <input type="button" class="btn" value="Elim">
-            <input type="button" class="btn" value="Option">
-            <input type="button" class="btn" value="Exit">
+            
 
         </div>
 
     </div>
 
+      <script>
+      
+        var x = 0;
+        function myFunction() {
+            let w= window.innerWidth;
+        const element1 = document.getElementById("time1");
+        let w1=element1.offsetWidth;
+        document.getElementById("dotted1").innerHTML = "&#183;";
+          let text1 = document.getElementById("dotted1").innerText;
+          if(w1>=478){
+            w1=w/25;
+          }
+          else{
+         w1=w1/11;}
+        let result1 = text1.repeat(w1);
+        document.getElementById("dotted1").innerHTML =result1;
+// second 
+        const element2 = document.getElementById("time2");
+        let w2=element2.offsetWidth;
+        document.getElementById("dotted2").innerHTML = "&#183;";
+          let text2= document.getElementById("dotted2").innerText;
+          if(w2>=478){
+            w2=w/25;
+          }
+          else{
+         w2=w2/11;}
+        let result2 = text2.repeat(w2);
+        document.getElementById("dotted2").innerHTML =result2;
 
+// third 
+const element3 = document.getElementById("time3");
+        let w3=element3.offsetWidth;
+        document.getElementById("dotted3").innerHTML = "&#183;";
+          let text3= document.getElementById("dotted3").innerText;
+    if(w3>=478){
+            w3=w/25-4;
+          }
+          else{
+         w3=w3/11-4;}
+        let result3 = text3.repeat(w3);
+        document.getElementById("dotted3").innerHTML =result3;
+// forth
+const element4 = document.getElementById("time4");
+        let w4=element4.offsetWidth;
+        document.getElementById("dotted4").innerHTML = "&#183;";
+          let text4= document.getElementById("dotted4").innerText;
+          if(w4>=478){
+            w4=w/25-2;
+          }
+          else{
+         w4=w4/11-2;}
+        let result4 = text4.repeat(w4);
+        document.getElementById("dotted4").innerHTML =result4;
 
+        // fifth
+        
+const element5 = document.getElementById("time5");
+        let w5=element5.offsetWidth;
+        document.getElementById("dotted5").innerHTML = "&#183;";
+          let text5= document.getElementById("dotted5").innerText;
+          if(w5>=478){
+            w5=w/25+2;
+          }
+          else{
+         w5=w5/11+2;}
+        let result5 = text5.repeat(w5);
+        document.getElementById("dotted5").innerHTML =result5;
+        // sixth
+const element6= document.getElementById("time6");
+        let w6=element6.offsetWidth;
+        document.getElementById("dotted6").innerHTML = "&#183;";
+          let text6= document.getElementById("dotted6").innerText;
+          if(w6>=478){
+            w6=w/25-1;
+          }
+          else{
+         w6=w6/11-1;}
+        let result6 = text6.repeat(w6);
+        document.getElementById("dotted6").innerHTML =result6;
+// seven 
 
+const element7= document.getElementById("time7");
+        let w7=element7.offsetWidth;
+        document.getElementById("dotted7").innerHTML = "&#183;";
+          let text7= document.getElementById("dotted7").innerText;
+          if(w7>=478){
+            w7=w/25+1;
+          }
+          else{
+         w7=w7/11+1;}
+        let result7 = text7.repeat(w7);
+        document.getElementById("dotted7").innerHTML =result7;
+
+        }
+        
+      </script>
+      <!-- defaul added dotted  -->
+      <script>
+      
+      let w1= window.innerWidth;
+      document.getElementById("dotted1").innerHTML = "&#183;";
+      let text1 = document.getElementById("dotted1").innerText;
+      w1=w1/25;
+      let result1= text1.repeat(w1);
+      
+      document.getElementById("dotted1").innerHTML = result1;
+// second 
+  
+let w2= window.innerWidth;
+      document.getElementById("dotted2").innerHTML = "&#183;";
+      let text2 = document.getElementById("dotted2").innerText;
+      w2=w2/25;
+      let result2= text2.repeat(w2);
+      
+      document.getElementById("dotted2").innerHTML = result2;
+      
+    //   third
+    
+let w3= window.innerWidth;
+      document.getElementById("dotted3").innerHTML = "&#183;";
+      let text3 = document.getElementById("dotted3").innerText;
+      w3=w3/25-4;
+      let result3= text3.repeat(w3);
+      
+      document.getElementById("dotted3").innerHTML = result3;
+      
+    //  forth
+     
+let w4= window.innerWidth;
+      document.getElementById("dotted4").innerHTML = "&#183;";
+      let text4 = document.getElementById("dotted4").innerText;
+      w4=w4/25-2;
+      let result4= text4.repeat(w4);
+      
+      document.getElementById("dotted4").innerHTML = result4;
+      
+     
+      
+    //   fifth 
+     
+let w5= window.innerWidth;
+      document.getElementById("dotted5").innerHTML = "&#183;";
+      let text5 = document.getElementById("dotted5").innerText;
+      w5=w5/25+2;
+      let result5= text5.repeat(w5);
+      
+      document.getElementById("dotted5").innerHTML = result5;
+
+    //   six 
+    
+let w6= window.innerWidth;
+      document.getElementById("dotted6").innerHTML = "&#183;";
+      let text6 = document.getElementById("dotted6").innerText;
+      w6=w6/25-1;
+      let result6= text6.repeat(w6);
+      
+      document.getElementById("dotted6").innerHTML = result6;
+    //  seven 
+
+let w7= window.innerWidth;
+      document.getElementById("dotted7").innerHTML = "&#183;";
+      let text7 = document.getElementById("dotted7").innerText;
+      w7=w7/25+1;
+      let result7= text7.repeat(w7);
+      
+      document.getElementById("dotted7").innerHTML = result7;
+     
+  </script>
+  
 
     <script>
 
@@ -333,8 +558,9 @@
         }
     </script>
 
+    
 
-
+    <!-- timing -->
 </body>
 
 </html>

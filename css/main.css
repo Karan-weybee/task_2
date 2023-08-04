@@ -2,36 +2,55 @@
   --primary-color: rgb(238, 49, 80);
 }
 
-body {
+.all {
+  margin: -8px;
   background: url("../images/wall.jpg");
+}
+
+#welcome {
+  color: var(--primary-color);
+  font-size: 1.6em;
+}
+
+.all-contant {
   margin-left: 2.5em;
   margin-right: 2.5em;
 }
 
 .footer {
-  margin-left: -2.5em;
-  padding-bottom: 3em;
   padding-left: 2.5em;
   padding-top: 1em;
-  margin-right: -2.5em;
   background: white;
   height: 3em;
   display: flex;
+  flex-wrap: wrap;
 }
 .footer .copy {
   margin-top: 0.5em;
+  margin-right: 25%;
+}
+.footer .buttons {
+  margin-left: -10%;
+  margin-bottom: 0.5em;
 }
 .footer .btn {
   padding: 0.5em 1em 0.5em 1em;
-  margin-left: 1.5em;
+  margin-left: 2.5em;
   margin-top: 0.5em;
 }
 
-#facebook {
-  margin-top: -3.5%;
-  display: block;
-  background: #9a9898;
+.photos-facebook {
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
   padding: 1em;
+  background: #b7b6b6;
+  border: 1px solid black;
+}
+
+#facebook {
+  font-size: large;
+  color: blue;
 }
 
 #gallary {
@@ -49,6 +68,8 @@ body {
 
 .main_nur {
   margin-right: 1em;
+  margin-bottom: 10%;
+  border: 1px;
 }
 
 .img-contant {
@@ -74,11 +95,12 @@ body {
 
 #cam-1-text {
   color: var(--primary-color);
-  font-size: large;
+  font-size: 2.1em;
 }
 
 #mail-icon {
   margin-top: -1em;
+  font-size: 2.1em;
   color: var(--primary-color);
 }
 
@@ -154,7 +176,7 @@ nav {
   right: 0;
   top: 0;
   background: #20272E;
-  height: 100vh;
+  height: 80vh;
   padding: 1em;
 }
 nav ul.primary-nav {
@@ -179,8 +201,9 @@ nav li a:hover {
   background: white;
 }
 .feature .container .left-col {
-  background: #F2F2F2;
+  background: white;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -188,6 +211,7 @@ nav li a:hover {
 .feature .container .left-col .maps,
 .feature .container .left-col .photos {
   border: 2px solid rgb(255, 255, 255);
+  background: #F2F2F2;
   padding: 1em;
   margin: 1em;
 }
@@ -205,8 +229,10 @@ nav li a:hover {
 .feature .container .left-col .videos .pho,
 .feature .container .left-col .maps .pho,
 .feature .container .left-col .photos .pho {
-  width: 50%;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 95%;
+  padding: 1%;
 }
 .feature .container .right-col {
   margin-left: 1em;
@@ -221,8 +247,9 @@ nav li a:hover {
 .feature .container .right-col .scedule .testonomial,
 .feature .container .right-col .scedule .contact,
 .feature .container .right-col .scedule .event {
+  margin: 1%;
+  background: #faf8f8;
   padding-left: 10%;
-  border: 2px solid black;
 }
 
 .last .action {
@@ -269,6 +296,10 @@ nav li a:hover {
 }
 
 @media (max-width: 473px) {
+  .all-contant {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
   .container1 {
     overflow: auto;
     white-space: nowrap;
@@ -284,7 +315,7 @@ nav li a:hover {
   }
   .feature .container .left-col {
     margin-top: 1em;
-    background: #F2F2F2;
+    background: white;
     display: block;
     align-items: center;
     padding-top: 0.5em;
@@ -294,6 +325,7 @@ nav li a:hover {
   .feature .container .left-col .photos {
     border: 2px solid rgb(255, 255, 255);
     display: grid;
+    background: #F2F2F2;
     grid-template-columns: 1fr;
   }
   .feature .container .left-col .videos .youtube,
@@ -311,8 +343,16 @@ nav li a:hover {
   .feature .container .left-col .videos .pho,
   .feature .container .left-col .maps .pho,
   .feature .container .left-col .photos .pho {
-    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     width: 95%;
+    padding: 1%;
+  }
+  .feature .container .left-col .videos .pho .face-photo,
+  .feature .container .left-col .maps .pho .face-photo,
+  .feature .container .left-col .photos .pho .face-photo {
+    width: 80%;
+    height: 120%;
   }
   .feature .container .right-col {
     margin-top: 1em;
@@ -327,22 +367,60 @@ nav li a:hover {
   .feature .container .right-col .scedule .testonomial,
   .feature .container .right-col .scedule .contact,
   .feature .container .right-col .scedule .event {
+    background: #faf8f8;
     align-items: center;
     width: 80%;
     margin: auto;
     margin-top: 1em;
     padding: 1em;
-    border: 2px solid rgb(10, 10, 10);
+  }
+  .feature .container .right-col .scedule .timing .list,
+  .feature .container .right-col .scedule .testonomial .list,
+  .feature .container .right-col .scedule .contact .list,
+  .feature .container .right-col .scedule .event .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature .container .right-col .scedule .timing .list input[type=submit],
+  .feature .container .right-col .scedule .testonomial .list input[type=submit],
+  .feature .container .right-col .scedule .contact .list input[type=submit],
+  .feature .container .right-col .scedule .event .list input[type=submit] {
+    margin-top: 0.5em;
+  }
+  .footer {
+    padding-left: 2.5em;
+    padding-top: 1em;
+    background: white;
+    height: 3em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .copy {
+    margin-top: 0.5em;
+    margin-right: 0%;
+  }
+  .footer .buttons {
+    margin-left: -1.5em;
+    margin-bottom: 0.5em;
+  }
+  .footer .btn {
+    padding: 0.5em 1em 0.5em 1em;
+    margin-left: 2.5em;
+    margin-top: 0.5em;
   }
 }
 @media only screen and (max-width: 816px) and (min-width: 474px) {
+  .all-contant {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
   .feature .container {
     background: white;
     display: block;
   }
   .feature .container .left-col {
     margin-top: 1em;
-    background: #F2F2F2;
+    background: white;
     display: block;
     align-items: center;
     padding-top: 0.5em;
@@ -351,6 +429,7 @@ nav li a:hover {
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
     border: 2px solid rgb(255, 255, 255);
+    background: #F2F2F2;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -371,9 +450,15 @@ nav li a:hover {
   .feature .container .left-col .videos .pho,
   .feature .container .left-col .maps .pho,
   .feature .container .left-col .photos .pho {
-    margin-left: 0.7em;
-    height: 95%;
-    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 95%;
+    padding: 1%;
+  }
+  .feature .container .left-col .videos .pho .photos-login,
+  .feature .container .left-col .maps .pho .photos-login,
+  .feature .container .left-col .photos .pho .photos-login {
+    margin-top: -15%;
   }
   .feature .container .right-col {
     margin-right: 1em;
@@ -387,11 +472,17 @@ nav li a:hover {
   .feature .container .right-col .scedule .testonomial,
   .feature .container .right-col .scedule .contact,
   .feature .container .right-col .scedule .event {
-    border: 2px solid black;
+    background: #faf8f8;
     padding: 0.3em;
   }
+  .feature .container .right-col .scedule .timing .main_nur,
+  .feature .container .right-col .scedule .testonomial .main_nur,
+  .feature .container .right-col .scedule .contact .main_nur,
+  .feature .container .right-col .scedule .event .main_nur {
+    margin-bottom: 7em;
+  }
 }
-@media only screen and (min-width: 916px) {
+@media only screen and (min-width: 1179px) {
   .mobile-menu,
   .mobile-menu-exit {
     display: none;
@@ -443,7 +534,7 @@ nav li a:hover {
   }
   .feature .container .left-col {
     margin-top: 1em;
-    background: #F2F2F2;
+    background: white;
     display: block;
     align-items: center;
   }
@@ -451,29 +542,38 @@ nav li a:hover {
   .feature .container .left-col .maps,
   .feature .container .left-col .photos {
     border: 2px solid rgb(255, 255, 255);
+    background: #F2F2F2;
     height: auto;
     justify-content: center;
+    margin-top: -0.5em;
+  }
+  .feature .container .left-col .videos p,
+  .feature .container .left-col .maps p,
+  .feature .container .left-col .photos p {
+    margin-left: 1.6em;
   }
   .feature .container .left-col .videos .youtube,
   .feature .container .left-col .maps .youtube,
   .feature .container .left-col .photos .youtube {
-    margin-left: 1.6em;
-    height: 18em;
+    margin-left: 1.7em;
+    height: 16em;
     width: 19em;
   }
   .feature .container .left-col .videos .frame,
   .feature .container .left-col .maps .frame,
   .feature .container .left-col .photos .frame {
-    margin-left: 1.6em;
-    height: 18em;
+    margin-left: 1.7em;
+    height: 16em;
     width: 19em;
   }
   .feature .container .left-col .videos .pho,
   .feature .container .left-col .maps .pho,
   .feature .container .left-col .photos .pho {
-    margin-left: 1.6em;
-    height: auto;
-    width: 19em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 95%;
+    padding: 1%;
+    border: 2px solid black;
   }
   .feature .container .right-col {
     margin-left: 1em;
@@ -488,8 +588,8 @@ nav li a:hover {
   .feature .container .right-col .scedule .testonomial,
   .feature .container .right-col .scedule .contact,
   .feature .container .right-col .scedule .event {
+    background: #faf8f8;
     padding: 1em;
-    border: 2px solid black;
   }
   .last .action {
     display: grid;
@@ -554,6 +654,7 @@ nav li a:hover {
 }
 .hero .container .contant h3 {
   color: var(--primary-color);
+  font-size: 2.1em;
 }
 .hero .container .contant p {
   margin-bottom: 4em;
@@ -583,16 +684,16 @@ nav li a:hover {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  margin-top: -40px;
+  color: #848080;
+  font-size: 3em;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+.fade {
+  margin-left: 8%;
 }
 
 /* Position the "next button" to the right */
@@ -602,10 +703,6 @@ nav li a:hover {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* Caption text */
 .text {
   color: #f2f2f2;
